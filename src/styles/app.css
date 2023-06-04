@@ -40,6 +40,7 @@ p {
   font-family: "mr-eaves-xl-modern", sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: var(--color-Black);
 }
 
 .container-image {
@@ -101,7 +102,7 @@ p {
 
 .titre-image {
   position: absolute;
-  top: 42%;
+  top: 50%;
   left: 0;
   width: 100%;
   padding: 20px;
@@ -170,9 +171,36 @@ p {
 .barre {
   position: absolute;
   top: 50%;
-  left: 20%;
+  left: 50%;
   transform: translateY(-50%);
-  width: 80%; /* Largeur de la barre */
-  height: 2px; /* Hauteur de la barre */
-  background-color: #ff0000; /* Couleur de la barre */
+  width: 50%; /* Largeur de la barre */
+  height: 3px; /* Hauteur de la barre */
+  background-color: var(--color-orange_pumpkin); /* Couleur de la barre */
+}
+
+.wave-section {
+  min-height: 100vh;
+  width: 100%;
+  color: var(--color-green_soap);
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.section-top {
+  position: relative;
+  background-image: url(../assets/images/wave.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  bottom: 0;
+  left: 0;
+}
+
+.test-title {
+  color: var(--color-Black);
+}
+
+.img-interview {
+  width: 300px;
 }/*# sourceMappingURL=app.css.map */
