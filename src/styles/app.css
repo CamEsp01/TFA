@@ -7,7 +7,7 @@
   --color-orange_pumpkin: #F25430;
   --color-green_soap: #D6D58E;
   --color-dwttxt: #FFFFFF;
-  --color-dwtund: #F25430;
+  --color-dwtund: #005C53;
   --font-big: 26px;
   --font-intermediate: 16px;
   --font-medium: 16px;
@@ -41,6 +41,12 @@ p {
   font-weight: 400;
   font-style: normal;
   color: var(--color-Black);
+  max-width: 800px;
+  padding-bottom: 16px;
+}
+
+.parag {
+  padding-top: 40px;
 }
 
 .container-image {
@@ -49,7 +55,8 @@ p {
 }
 
 .menu {
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   z-index: 100;
   background-color: var(--color-white);
@@ -59,6 +66,7 @@ p {
   justify-content: center;
   align-items: center;
   padding: 0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
 }
 .menu__el {
   position: relative;
@@ -102,7 +110,7 @@ p {
 
 .titre-image {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 0;
   width: 100%;
   padding: 20px;
@@ -114,11 +122,14 @@ p {
 
 /* Footer */
 .footer {
-  background-color: var(--color-green_turquoise);
+  background-color: var(--color-green_soap);
 }
 
 .credits a, .credits span, .subnav__el a {
   color: var(--color-white);
+}
+
+.credits {
   padding-top: 40px;
 }
 
@@ -130,7 +141,7 @@ p {
 }
 
 .credits a:hover {
-  color: var(--color-orange_pumpkin);
+  color: var(--color-green_turquoise);
   transition: 0.3s;
 }
 
@@ -141,7 +152,7 @@ p {
 }
 
 .subnav__el a:hover {
-  color: var(--color-orange_pumpkin);
+  color: var(--color-green_turquoise);
   transition: 0.3s;
 }
 
@@ -175,6 +186,7 @@ p {
   transform: translateY(-50%);
   width: 50%; /* Largeur de la barre */
   height: 3px; /* Hauteur de la barre */
+  border-radius: 2px;
   background-color: var(--color-orange_pumpkin); /* Couleur de la barre */
 }
 
@@ -202,5 +214,25 @@ p {
 }
 
 .img-interview {
-  width: 300px;
+  width: 400px;
+  height: 500px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.img--text {
+  display: flex;
+  justify-content: center;
+}
+.img--text__flex {
+  padding-left: 50px;
+  padding-top: 150px;
+}
+
+.svg-fruits {
+  position: absolute;
+  right: 30px;
+  bottom: 100px;
+  width: 160px;
+  margin-left: 0;
+  transform: rotate(20deg);
 }/*# sourceMappingURL=app.css.map */
