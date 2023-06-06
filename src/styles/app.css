@@ -753,6 +753,10 @@ p {
   color: var(--color-Black);
 }
 
+.link--credits:hover {
+  text-decoration: underline;
+}
+
 .section-back {
   background-color: var(--color-green_soap);
 }
