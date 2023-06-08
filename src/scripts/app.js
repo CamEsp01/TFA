@@ -8,7 +8,6 @@ menuBurger.addEventListener('click', function(){
 });
 
 
-
 let navTriggers = document.querySelectorAll(".menu__el");
 for (let navTrigger of navTriggers) {
   navTrigger.addEventListener("click", (event) => {
