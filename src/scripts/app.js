@@ -66,13 +66,14 @@ if(btn_legende != undefined && btn_legende != null){
 	});
 }
 
+// Animation gsap
 
-const Animations = document.querySelectorAll('.test-bar, .border-grid, .image-container');
+const Animation = document.querySelectorAll('.test-bar, .border-grid');
 
-Animations.forEach((element) => {
+Animation.forEach((element) => {
   gsap.from(element, {
     opacity: 0,
-    y: 100,
+    x: 100,
     duration: 12,
     scrollTrigger: {
       trigger: element,
