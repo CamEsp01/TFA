@@ -1,12 +1,22 @@
 'user strict';
+import { gsap } from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
+
+// menu burger
 
 const menuBurger = document.querySelector('.menu__burger');
 const menu = document.querySelector('.menu');
 
-menuBurger.addEventListener('click', function(){
+if (menuBurger != undefined && menuBurger != null){
+
+  menuBurger.addEventListener('click', function(){
     menu.classList.toggle('menu--open');
 });
+}
 
+// Active nav
 
 let navTriggers = document.querySelectorAll(".menu__el");
 for (let navTrigger of navTriggers) {
@@ -19,6 +29,7 @@ for (let navTrigger of navTriggers) {
   });
 }
 
+// Active nav scroll
 
 if (menuBurger != undefined && menuBurger != null){
   let section = document.querySelectorAll('.section');
@@ -45,7 +56,8 @@ if (menuBurger != undefined && menuBurger != null){
   };
 };
 
-// AFFICHAGE LEGENDE
+// Affichage legende
+
 const btn_legende = document.querySelector("#btn_legende");
 if(btn_legende != undefined && btn_legende != null){
 	btn_legende.addEventListener("click", (e) =>{
@@ -53,6 +65,23 @@ if(btn_legende != undefined && btn_legende != null){
 		legende.classList.toggle("hidden");
 	});
 }
+
+
+const Animations = document.querySelectorAll('.test-bar, .border-grid, .image-container');
+
+Animations.forEach((element) => {
+  gsap.from(element, {
+    opacity: 0,
+    y: 100,
+    duration: 12,
+    scrollTrigger: {
+      trigger: element,
+      start: 'top 100%',
+      end: 'bottom 100%',
+      scrub: true
+    }
+  });   
+});
 
   
 
