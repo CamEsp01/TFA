@@ -154,7 +154,7 @@ p {
   border-radius: 15% 0 0 15%;
 }
 
-.test-title {
+.title--rec {
   position: relative;
   color: var(--color-Black);
 }
