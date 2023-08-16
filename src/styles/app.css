@@ -30,6 +30,10 @@ body {
   color: #444;
 }
 
+header {
+  background-color: var(--color-green_turquoise);
+}
+
 .section {
   padding: 100px 20px;
 }
@@ -73,7 +77,6 @@ body {
   font-size: 20px;
   color: var(--color-Black);
   padding: 10px 0 20px 0;
-  text-decoration: underline;
 }
 
 p {
@@ -99,19 +102,7 @@ p {
 .img-soutien {
   display: block;
   width: 100%;
-  filter: brightness(0.5);
-}
-
-.titre-image {
-  position: absolute;
-  top: 40%;
-  left: 0;
-  width: 100%;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  font-size: var(--font-big);
-  text-align: center;
+  margin: 300px 0 300px 0;
 }
 
 .section--top {
@@ -206,12 +197,6 @@ p {
 .container-hyp {
   display: flex;
   gap: 20px;
-}
-
-.border-grid {
-  border: 2px solid var(--color-green_turquoise);
-  padding: 20px;
-  border-radius: 15px;
 }
 
 .slider {
@@ -327,16 +312,6 @@ p {
   border: 3px solid var(--color-green_turquoise);
   border-radius: 2px;
   padding: 5px;
-}
-
-.btn-stat:hover {
-  background-color: var(--color-green_turquoise);
-  color: var(--color-white);
-}
-
-.btn-stat:active {
-  background-color: var(--color-green_turquoise);
-  color: var(--color-white);
 }
 
 .legende {
@@ -754,15 +729,14 @@ p {
     transform-origin: center;
   }
   .menu__el a:hover {
-    color: var(--color-white);
+    color: var(--color-green_turquoise);
     background-color: var(--color-orange_pumpkin);
     text-decoration: none;
-    padding: 2px 4px 2px 4px;
     border-radius: 2px;
   }
   .menu__el--active {
     background-color: var(--color-orange_pumpkin);
-    color: var(--color-white);
+    color: var(--color-green_turquoise);
   }
   .svg-fruits {
     right: 30px;
@@ -838,12 +812,10 @@ p {
     font-size: 18px;
   }
   .menu__el a:hover {
-    color: var(--color-white);
+    color: var(--color-green_turquoise);
     background-color: var(--color-orange_pumpkin);
     text-decoration: none;
-    padding: 2px 4px 2px 4px;
     border-radius: 2px;
-    letter-spacing: 1px;
   }
   .svg-fruits {
     bottom: 30px;
@@ -855,4 +827,8 @@ p {
   .section--uicred {
     padding: 100px 200px;
   }
+}
+.sect-bac {
+  background-color: var(--color-green_turquoise);
+  margin-top: 100px;
 }/*# sourceMappingURL=app.css.map */

@@ -31,6 +31,10 @@ body {
   color: #444;
 }
 
+header{
+  background-color: var(--color-green_turquoise);
+}
+
 .section{
   padding: 100px 20px;
 }
@@ -76,7 +80,6 @@ body {
   font-size: 20px;
   color: var(--color-Black);
   padding: 10px 0 20px 0;
-  text-decoration: underline;
 }
 
 p{
@@ -108,19 +111,7 @@ p{
 .img-soutien{
   display: block;
   width: 100%;
-  filter: brightness(0.5);
-}
-  
-.titre-image {
-  position: absolute;
-  top: 40%;
-  left: 0;
-  width: 100%;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  font-size: var(--font-big);
-  text-align: center;
+  margin: 300px 0 300px 0;
 }
 
 // SECTION 1
@@ -226,9 +217,9 @@ p{
 }
 
 .border-grid{
-  border: 2px solid var(--color-green_turquoise);
-  padding: 20px;
-  border-radius: 15px;
+  // border: 2px solid var(--color-green_turquoise);
+  // padding: 20px;
+  // border-radius: 15px;
 }
 
 // SECTION 4
@@ -396,15 +387,15 @@ p{
   padding: 5px;
 }
 
-.btn-stat:hover{
-  background-color: var(--color-green_turquoise);
-  color: var(--color-white);
-}
+// .btn-stat:hover{
+//   background-color: var(--color-green_turquoise);
+//   color: var(--color-white);
+// }
 
-.btn-stat:active{
-  background-color: var(--color-green_turquoise);
-  color: var(--color-white);
-}
+// .btn-stat:active{
+//   background-color: var(--color-green_turquoise);
+//   color: var(--color-white);
+// }
 
 .legende {
   display: flex;
@@ -899,16 +890,15 @@ p{
     }
     
     &__el a:hover {
-      color: var(--color-white);
+      color: var(--color-green_turquoise);
       background-color: var(--color-orange_pumpkin);
       text-decoration: none;
-      padding: 2px 4px 2px 4px;
       border-radius: 2px;
     }
     
     &__el--active{
       background-color: var(--color-orange_pumpkin);
-      color: var(--color-white);
+      color: var(--color-green_turquoise);
     }
   }
 
@@ -1016,12 +1006,10 @@ p{
   .menu{
 
     &__el a:hover {
-      color: var(--color-white);
+      color: var(--color-green_turquoise);
       background-color: var(--color-orange_pumpkin);
       text-decoration: none;
-      padding: 2px 4px 2px 4px;
       border-radius: 2px;
-      letter-spacing: 1px;
     }
   }
 
@@ -1042,6 +1030,11 @@ p{
     padding: 100px 200px;
   
   }
+}
+
+.sect-bac{
+  background-color: var(--color-green_turquoise);
+  margin-top: 100px;
 }
 
 

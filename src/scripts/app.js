@@ -58,13 +58,13 @@ if (menuBurger != undefined && menuBurger != null){
 
 // Affichage legende
 
-const btn_legende = document.querySelector("#btn_legende");
-if(btn_legende != undefined && btn_legende != null){
-	btn_legende.addEventListener("click", (e) =>{
-		const legende = document.querySelector("#legende");
-		legende.classList.toggle("hidden");
-	});
-}
+// const btn_legende = document.querySelector("#btn_legende");
+// if(btn_legende != undefined && btn_legende != null){
+// 	btn_legende.addEventListener("click", (e) =>{
+// 		const legende = document.querySelector("#legende");
+// 		legende.classList.toggle("hidden");
+// 	});
+// }
 
 // Animation gsap
 
@@ -83,6 +83,9 @@ Animation.forEach((element) => {
     }
   });   
 });
+
+
+
 
   
 
