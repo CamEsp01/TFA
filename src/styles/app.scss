@@ -264,12 +264,6 @@ p{
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.border-grid{
-  // border: 2px solid var(--color-green_turquoise);
-  // padding: 20px;
-  // border-radius: 15px;
-}
-
 // SECTION 4
 
 // slider textes
@@ -435,16 +429,6 @@ p{
   padding: 5px;
 }
 
-// .btn-stat:hover{
-//   background-color: var(--color-green_turquoise);
-//   color: var(--color-white);
-// }
-
-// .btn-stat:active{
-//   background-color: var(--color-green_turquoise);
-//   color: var(--color-white);
-// }
-
 .legende {
   display: flex;
   flex-flow: row wrap;
@@ -497,8 +481,6 @@ p{
 }
 
 .border-tfa{
-  // border: 3px solid var(--color-green_turquoise);
-  // border-radius: 15px;
   max-width: 800px;
   padding: 20px;
   grid-column: 1/2;
@@ -728,7 +710,7 @@ p{
 }
 
 .color-stat{
-  color: var(--color-orange_pumpkin);
+  color: var(--color-green_turquoise);
 }
 
 .stat-arrow{
