@@ -28,7 +28,6 @@
   
 
   <link rel="stylesheet" href="https://use.typekit.net/gno1llj.css">
-  <link rel="stylesheet" href="https://use.typekit.net/gno1llj.css">
 
   <link rel="stylesheet" href="styles/app.css">
 
@@ -59,11 +58,17 @@
 
      
       <div class="img-soutien">
-        <h1 class="title-img">SupportiveEats
+
+        <img class="img__intro" src="assets/images/img-backg@1x.png" alt="2 mains qui se tiennent"
+        srcset="assets/images/img-backg@1x.png 1x, assets/images/img-backg@2x.png 2x"
+        loading="lazy" decoding="async">                
+
+        <h1 class="title title-img">SupportiveEats
           <span class="title__span">
             L'importance du soutien de l'entourage dans la poursuite d'un régime
-            </span>
+          </span>
         </h1> 
+
       </div>
 
       <button class="menu__burger">
@@ -83,8 +88,8 @@
       <div class="wave-section img--text">
 
         <div class="image-container">
-          <img class="img-search" src="assets/images/recherche-1@.jpg" alt="Image d'une personne qui utilise un ordinateur avecc des livres autour"
-          srcset="assets/images/recherche-1@.jpg 1x, assets/images/recherche-2@.jpg 2x"
+          <img class="img-search" src="assets/images/img-regime@1x.jpg" alt="Image d'une personne qui utilise un ordinateur avecc des livres autour"
+          srcset="assets/images/img-regime@1x.jpg 1x, assets/images/img-regime@2x.jpg 2x"
           loading="lazy" decoding="async">
         </div>
 
@@ -121,7 +126,7 @@
         </div>
 
         <div class="container-search">
-          <img class="svg-inter" src="assets/images/interrogation.svg" alt="trois svg de point d'interrogation"
+          <img class="svg-inter" src="assets/images/interrogation-2.svg" alt="trois svg de point d'interrogation"
           loading="lazy" decoding="async">
           <P class="test-bar">Pour ce faire, j’ai d'abord réalisé un guide d’entretien ce qui me permettait de mettre en avant les meilleures questions à poser à mes utilisateurs, les questions les plus pertinentes qui me permettrait de trouver mes hypothèses et ma solution.</P>
         </div> 
@@ -146,19 +151,33 @@
       <div class="container-hyp">
 
         <div class="border-grid left">
-          <P>Après avoir réalisé mes interviews, j’ai pu émettre quelques hypothèses de ce qui pourrait être le plus adapté pour mon projet, ces hypothèses se basent principalement sur la motivation ou le soutien car c’est ce qui est ressorti le plus pendant mes interviews.</P>
+          <P class="para">Après avoir réalisé mes interviews, j’ai pu émettre quelques hypothèses de ce qui pourrait être le plus adapté pour mon projet, ces hypothèses se basent principalement sur la motivation ou le soutien car c’est ce qui est ressorti le plus pendant mes interviews.</P>
+       
+          <P class="para">Il est fréquent que les personnes arrêtent leur régime alimentaire ou leur rééquilibrage nutritionnel simplement parce qu'elles se retrouvent seules à faire attention à leur alimentation, tandis que le reste de leur famille continue de manger de manière peu saine. Cela peut être difficile à gérer. De même, recevoir occasionnellement un message de soutien peut avoir un impact positif sur le moral et aider à ne pas abandonner.</P>
         </div>
 
-        <div class="border-grid right">
-          <P>Il est fréquent que les personnes arrêtent leur régime alimentaire ou leur rééquilibrage nutritionnel simplement parce qu'elles se retrouvent seules à faire attention à leur alimentation, tandis que le reste de leur famille continue de manger de manière peu saine. Cela peut être difficile à gérer. De même, recevoir occasionnellement un message de soutien peut avoir un impact positif sur le moral et aider à ne pas abandonner.</P>
+        <div class="border-grid right--img grid--img">
+          <img class="img__grid img__filleham" src="assets/images/filleham@1x.jpg"
+                alt="Fille qui mange hamburger"
+                srcset="assets/images/filleham@1x.jpg 1x,
+                        assets/images/filleham@2x.jpg 2x"
+                loading="lazy"
+                decoding="async">
         </div>
         
-        <div class="border-grid left-2">
-          <P>J'ai donc émis plusieurs hypothèses qui pourraient être intéressantes à explorer, telles qu'une application proposant des objectifs quotidiens pour maintenir la motivation, ou encore une application qui envoie un message de soutien chaque jour, voire la création d'un groupe de discussion.</P>
+        <div class="border-grid right">
+          <P class="para">J'ai donc émis plusieurs hypothèses qui pourraient être intéressantes à explorer, telles qu'une application proposant des objectifs quotidiens pour maintenir la motivation, ou encore une application qui envoie un message de soutien chaque jour, voire la création d'un groupe de discussion.</P>
+      
+          <P class="para">Finalement l’hypothèse qui m’a le plus convaincu c’est concevoir une application de soutien destinée à l’entourage et à la famille. En effet, il est vrai que le soutien de l’entourage à tendance à disparaître, et la plupart du temps, quand on demande à quelqu’un si il a du soutien venant de son entourage ce n’est pas forcément le cas.</P>
         </div>
 
-        <div class="border-grid right-2">
-          <P>Finalement l’hypothèse qui m’a le plus convaincu c’est concevoir une application de soutien destinée à l’entourage et à la famille. En effet, il est vrai que le soutien de l’entourage à tendance à disparaître, et la plupart du temps, quand on demande à quelqu’un si il a du soutien venant de son entourage ce n’est pas forcément le cas.</P>
+        <div class="border-grid left--img grid--img">
+          <img class="img__grid img__famille" src="assets/images/famille@1x.jpg"
+                alt="Fille qui mange hamburger"
+                srcset="assets/images/famille@1x.jpg 1x,
+                        assets/images/famille@2x.jpg 2x"
+                loading="lazy"
+                decoding="async">
         </div>
 
     </div>
@@ -172,9 +191,11 @@
         <h2 class="title title--med">Boostez votre expérience : Explorez nos&nbsp;fonctionnalités</h2>
         <span class="bar"></span>
       </div>
-
-      <p>Maintenant, entrons dans le vif du sujet ! Imaginez une application qui non seulement vous motive à suivre votre régime, mais qui devient également votre compagnon de route dans cette aventure. Je vous montrer les fonctionnalités de l’application. Attendez-vous à voir comment ces fonctions vont rendre chaque étape de votre parcours agréable.</p>
-
+    <div class="pad-text"> 
+      <p>Maintenant, entrons dans le vif du sujet ! Imaginez une application qui non seulement vous motive à suivre votre régime, mais qui devient également votre compagnon de route dans cette aventure.</p>
+        
+        <p>Je vous montrer les fonctionnalités de l’application. Attendez-vous à voir comment ces fonctions vont rendre chaque étape de votre parcours agréable.</p>
+    </div>
       <div class="fond__slider">
         <div class="slider">
           <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
@@ -210,8 +231,13 @@
           </div>
         </div> 
       </div>
+<!-- 
+      <div class="title-fonc">
+        <h3 class="title-bord">Plus de précision</h3>
+      </div> -->
 
-      <button class="btn btn-stat">Plus de précision</button>
+      <img class="svg-fonct" src="assets/images/arrow-fonct.svg" alt="svg d'une cloche de notification"
+      loading="lazy" decoding="async">
 
       <div id="legende">
         <div class="legende">
@@ -275,7 +301,7 @@
 
       <div class="flex-tfa">
         <div class="border-ccl"> 
-          <h3 class="title title--ccl">SupportiveEats</h3>
+          <h3 class="title title--ccl2">SupportiveEats</h3>
           <p class="color-txt">En conclusion, mon travail de fin d'études met l'accent sur l'importance du soutien de l'entourage dans le contexte des régimes alimentaires, le nom de mon application serait "supportiveEats".</p>
           <p class="color-txt">Grâce à une application spécialement conçue, j'ai cherché à fournir des fonctionnalités visant à faciliter ce soutien, à renforcer la motivation et à améliorer les résultats des régimes.</p>
           <p class="color-txt">Je suis impatient de partager avec vous les résultats de mes recherches et les démonstrations de l'application.</p>
