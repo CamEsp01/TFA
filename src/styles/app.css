@@ -59,7 +59,6 @@ header {
 .title {
   font-family: "june-expt-variable", sans-serif;
   font-variation-settings: "STYL" 0;
-  margin: 0 10px;
 }
 
 .title--med {
@@ -139,7 +138,7 @@ p {
 }
 
 .title-img {
-  font-size: 64px;
+  font-size: 34px;
   color: var(--color-orange_pumpkin);
   padding-top: 40px;
 }
@@ -399,6 +398,14 @@ p {
 
 .flex-tfa {
   display: flex;
+  flex-direction: column;
+  padding-bottom: 60px;
+  gap: 40px;
+  margin: 0 5% 40px;
+}
+
+.flex-tfa2 {
+  display: flex;
   justify-content: center;
   padding-bottom: 60px;
 }
@@ -406,13 +413,34 @@ p {
 .border-tfa {
   max-width: 800px;
   padding: 20px;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.border-tfa2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-famille {
+  width: 100%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.img--container {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .border-ccl {
   background-color: var(--color-green_turquoise);
   border-radius: 15px;
   max-width: 800px;
-  padding: 20px;
+  padding: 40px;
 }
 
 .color-txt {
@@ -424,6 +452,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
+  margin-top: 40px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -585,6 +614,41 @@ p {
   fill: var(--color-dwtund);
 }
 
+.flex-arrow {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0 0 40px;
+}
+
+.text-stat {
+  padding: 15px 0 0 0;
+  max-width: 45ch;
+}
+
+.test-arrow {
+  display: flex;
+  flex-direction: column;
+}
+
+.color-stat {
+  color: var(--color-orange_pumpkin);
+}
+
+.stat-arrow {
+  width: 40px;
+}
+
+.pad-text {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding-bottom: 40px;
+}
+
+.text-width {
+  max-width: 800px;
+}
+
 @media (max-width: 700px) {
   .img-tab {
     display: none;
@@ -720,6 +784,9 @@ p {
     height: 60px;
     width: 60px;
   }
+  .test-arrow {
+    margin: 100px 0 20px 0;
+  }
 }
 @media (min-width: 701px) {
   :root {
@@ -775,6 +842,11 @@ p {
   }
   .img-phone {
     display: none;
+  }
+  .flex-tfa {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
   }
   .menu__burger {
     display: none;
@@ -864,10 +936,6 @@ p {
   .img__grid {
     width: 80%;
   }
-  .pad-text {
-    padding-left: 60px;
-    padding-bottom: 40px;
-  }
   .border-legend {
     justify-content: space-around;
     padding: 20px;
@@ -880,6 +948,9 @@ p {
   }
   .section--uicred {
     padding: 100px 100px;
+  }
+  .test-arrow {
+    margin: 100px 100px 20px 100px;
   }
 }
 @media (min-width: 1000px) {

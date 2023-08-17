@@ -56,33 +56,66 @@ if (menuBurger != undefined && menuBurger != null){
   };
 };
 
-// Affichage legende
+// Animations images
 
-// const btn_legende = document.querySelector("#btn_legende");
-// if(btn_legende != undefined && btn_legende != null){
-// 	btn_legende.addEventListener("click", (e) =>{
-// 		const legende = document.querySelector("#legende");
-// 		legende.classList.toggle("hidden");
-// 	});
-// }
-
-// Animation gsap
-
-const Animation = document.querySelectorAll('.test-bar, .border-grid');
+const Animation = document.querySelectorAll('.right--img, .border-tfa2');
 
 Animation.forEach((element) => {
   gsap.from(element, {
     opacity: 0,
-    x: 100,
-    duration: 12,
+    x: 150,
+    duration: 5,
     scrollTrigger: {
       trigger: element,
-      start: 'top 100%',
+      start: 'top 65%',
       end: 'bottom 100%',
       scrub: true
     }
   });   
 });
+
+const Animat = document.querySelectorAll('.left--img');
+
+Animat.forEach((element) => {
+  gsap.from(element, {
+    opacity: 0,
+    x: -150,
+    duration: 5,
+    scrollTrigger: {
+      trigger: element,
+      start: 'top 65%',
+      end: 'bottom 100%',
+      scrub: true
+    }
+  });   
+});
+
+
+const Anim = document.querySelectorAll('.image-container');
+
+Anim.forEach((element) => {
+  gsap.from(element, {
+    opacity: 0,
+    y: 150,
+    duration: 5,
+    scrollTrigger: {
+      trigger: element,
+      start: 'top 65%',
+      end: 'bottom 100%',
+      scrub: true
+    }
+  });   
+});
+
+
+
+
+
+
+
+
+
+
 
 
 
