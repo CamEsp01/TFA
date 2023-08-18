@@ -58,6 +58,8 @@ if (menuBurger != undefined && menuBurger != null){
 
 // Animations images
 
+
+
 const Animation = document.querySelectorAll('.right--img, .border-tfa2');
 
 Animation.forEach((element) => {

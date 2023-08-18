@@ -983,4 +983,12 @@ p {
   .section--uicred {
     padding: 100px 200px;
   }
+}
+@media (min-width: 1600px) {
+  .img-famille {
+    margin-bottom: 150px;
+  }
+  .svg-fruits {
+    bottom: 200px;
+  }
 }/*# sourceMappingURL=app.css.map */
